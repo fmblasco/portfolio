@@ -43,6 +43,13 @@ This calculation successfully identified the parliamentarians acting as strategi
 *(Visualization of the legislative network and ideological groupings based on roll-call votes.)*
 ![](co-voting_graph.png){fig-align="center" width="100%"}
 
+---
+
+### Technologies & Tools
+*   **Languages & Packages:** R (dplyr, tidyr, purrr, igraph).
+*   **Software:** Gephi (ForceAtlas 2).
+*   **Data Sources:** Chamber of Deputies Open Data API.
+
 <br>
 
 <div class="text-center">

@@ -10,7 +10,7 @@ format:
 
 ### Scaling Up Institutional Analysis
 
-This is a large-scale computational research investigating institutional dynamics across Latin American governments. I participate in this study as a researcher for the [PEX - Network](https://pex-network.com/) group, contributing to the project titled *"Unilateralismo Administrativo: seletividade regulatória e particularismo presidencial"*.
+This is a large-scale computational research investigating institutional dynamics across Latin American governments. I participate in this study as a researcher for the [PEX - Network](https://pex-network.com/) group, contributing to the project titled *"Administrative Unilateralism: regulatory selectivity and presidential particularism"*.
 
 Understanding comparative political economy requires analyzing institutional rules at scale. Guided by the methodological frameworks established in current academic literature on unilateralism, this project has been a steep but highly rewarding learning curve in processing "text-as-data".
 
@@ -20,13 +20,15 @@ My role focuses on the backend infrastructure and data intelligence, managing th
 
 ### 1. Web Scraping at Scale (150,000+ Records)
 
-Extracting data from dynamic and often unstable governmental portals requires resilient code. I conceptualized and automated script routines for systematic batch processing. 
+Extracting data from dynamic and often unstable government and legal portals requires resilient code. I conceptualized and automated script routines for systematic batch processing. 
 
 This involved overcoming pagination barriers, managing server request rates, and bypassing connection instabilities to successfully consolidate, for example, a unified database of over 150,000 official normative records.
 
 ### 2. Statistical Programming and Strict Data Validation
 
-Cleaning and modeling large institutional databases requires extreme precision. When validating the data for Argentine legislative relations, for example, I learned the critical importance of strict data alignment. I designed the logic to ensure that legislative texts were only counted in our metrics if they were definitively present in the local text database. Handling these discrepancies natively within the code ensures the integrity of the cross-country analysis.
+Cleaning and modeling large institutional databases requires extreme precision. My work encompasses the manipulation, cleaning, and modeling of these datasets, ensuring the integrity and standardization of complex data originating from multiple countries. Furthermore, I am responsible for constructing the indicators, graphs, and analytical reports necessary for the project's broader comparative goals.
+
+*Learning Note: This ongoing research continuously teaches me the critical importance of rigorous data validation and the necessity of accounting for vastly different structural standards of information across varying institutional frameworks in Latin America.*
 
 ### 3. Natural Language Processing (NLP)
 
@@ -35,7 +37,13 @@ To move beyond metadata, I applied NLP techniques to decode the raw content of d
 *   **Pre-processing & Vectorization:** Transforming legal jargon into structured data.
 *   **Named Entity Recognition (NER):** Automatically identifying and categorizing key political and economic actors within the texts.
 
-*Learning Note: This project marked a significant step in my technical evolution, bridging the gap between traditional web scraping and advanced computational text analysis for economic policy evaluation.*
+*Learning Note: This project marked a significant step in my technical evolution, bridging the gap between traditional web scraping and advanced computational text analysis for the evaluation of regulatory policies. For example, the process of validating regular expressions (Regex) in Argentine texts to capture regulatory selectivity required me to conduct a detailed study of the Argentine normative textual structure.*
+
+---
+
+### Technologies & Tools
+*   **Languages & Packages:** R (dplyr, rvest, rmarkdown, stringi, etc.); Python (Pandas, PyMuPDF/fitz, Glob, OS).
+*   **Data Sources:** Various Governmental and Legal APIs.
 
 <br>
 <div class="text-center">

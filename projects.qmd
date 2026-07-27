@@ -2,7 +2,7 @@
 title: "Projects & Applied Research"
 ---
 
-Here I detail my research projects and data pipelines applied to political economy and public finance. 
+Here, I detail my research projects and data pipelines applied to economics, political analysis, and public finance. 
 
 <br>
 

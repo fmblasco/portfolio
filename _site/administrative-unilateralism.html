@@ -123,6 +123,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#web-scraping-at-scale-150000-records" id="toc-web-scraping-at-scale-150000-records" class="nav-link" data-scroll-target="#web-scraping-at-scale-150000-records">1. Web Scraping at Scale (150,000+ Records)</a></li>
   <li><a href="#statistical-programming-and-strict-data-validation" id="toc-statistical-programming-and-strict-data-validation" class="nav-link" data-scroll-target="#statistical-programming-and-strict-data-validation">2. Statistical Programming and Strict Data Validation</a></li>
   <li><a href="#natural-language-processing-nlp" id="toc-natural-language-processing-nlp" class="nav-link" data-scroll-target="#natural-language-processing-nlp">3. Natural Language Processing (NLP)</a></li>
+  <li><a href="#technologies-tools" id="toc-technologies-tools" class="nav-link" data-scroll-target="#technologies-tools">Technologies &amp; Tools</a></li>
   </ul>
 </nav>
     </div>
@@ -156,19 +157,20 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="scaling-up-institutional-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="scaling-up-institutional-analysis">Scaling Up Institutional Analysis</h3>
-<p>This is a large-scale computational research investigating institutional dynamics across Latin American governments. I participate in this study as a researcher for the <a href="https://pex-network.com/">PEX - Network</a> group, contributing to the project titled <em>“Unilateralismo Administrativo: seletividade regulatória e particularismo presidencial”</em>.</p>
+<p>This is a large-scale computational research investigating institutional dynamics across Latin American governments. I participate in this study as a researcher for the <a href="https://pex-network.com/">PEX - Network</a> group, contributing to the project titled <em>“Administrative Unilateralism: regulatory selectivity and presidential particularism”</em>.</p>
 <p>Understanding comparative political economy requires analyzing institutional rules at scale. Guided by the methodological frameworks established in current academic literature on unilateralism, this project has been a steep but highly rewarding learning curve in processing “text-as-data”.</p>
 <p>My role focuses on the backend infrastructure and data intelligence, managing the complexities of standardizing legal structures across Brazil, Argentina, Chile, Peru, Colombia, and Paraguay.</p>
 <hr>
 </section>
 <section id="web-scraping-at-scale-150000-records" class="level3">
 <h3 class="anchored" data-anchor-id="web-scraping-at-scale-150000-records">1. Web Scraping at Scale (150,000+ Records)</h3>
-<p>Extracting data from dynamic and often unstable governmental portals requires resilient code. I conceptualized and automated script routines for systematic batch processing.</p>
+<p>Extracting data from dynamic and often unstable government and legal portals requires resilient code. I conceptualized and automated script routines for systematic batch processing.</p>
 <p>This involved overcoming pagination barriers, managing server request rates, and bypassing connection instabilities to successfully consolidate, for example, a unified database of over 150,000 official normative records.</p>
 </section>
 <section id="statistical-programming-and-strict-data-validation" class="level3">
 <h3 class="anchored" data-anchor-id="statistical-programming-and-strict-data-validation">2. Statistical Programming and Strict Data Validation</h3>
-<p>Cleaning and modeling large institutional databases requires extreme precision. When validating the data for Argentine legislative relations, for example, I learned the critical importance of strict data alignment. I designed the logic to ensure that legislative texts were only counted in our metrics if they were definitively present in the local text database. Handling these discrepancies natively within the code ensures the integrity of the cross-country analysis.</p>
+<p>Cleaning and modeling large institutional databases requires extreme precision. My work encompasses the manipulation, cleaning, and modeling of these datasets, ensuring the integrity and standardization of complex data originating from multiple countries. Furthermore, I am responsible for constructing the indicators, graphs, and analytical reports necessary for the project’s broader comparative goals.</p>
+<p><em>Learning Note: This ongoing research continuously teaches me the critical importance of rigorous data validation and the necessity of accounting for vastly different structural standards of information across varying institutional frameworks in Latin America.</em></p>
 </section>
 <section id="natural-language-processing-nlp" class="level3">
 <h3 class="anchored" data-anchor-id="natural-language-processing-nlp">3. Natural Language Processing (NLP)</h3>
@@ -177,7 +179,15 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Pre-processing &amp; Vectorization:</strong> Transforming legal jargon into structured data.</li>
 <li><strong>Named Entity Recognition (NER):</strong> Automatically identifying and categorizing key political and economic actors within the texts.</li>
 </ul>
-<p><em>Learning Note: This project marked a significant step in my technical evolution, bridging the gap between traditional web scraping and advanced computational text analysis for economic policy evaluation.</em></p>
+<p><em>Learning Note: This project marked a significant step in my technical evolution, bridging the gap between traditional web scraping and advanced computational text analysis for the evaluation of regulatory policies. For example, the process of validating regular expressions (Regex) in Argentine texts to capture regulatory selectivity required me to conduct a detailed study of the Argentine normative textual structure.</em></p>
+<hr>
+</section>
+<section id="technologies-tools" class="level3">
+<h3 class="anchored" data-anchor-id="technologies-tools">Technologies &amp; Tools</h3>
+<ul>
+<li><strong>Languages &amp; Packages:</strong> R (dplyr, rvest, rmarkdown, stringi, etc.); Python (Pandas, PyMuPDF/fitz, Glob, OS).</li>
+<li><strong>Data Sources:</strong> Various Governmental and Legal APIs.</li>
+</ul>
 <br>
 <div class="text-center">
 <p><span class="btn btn-secondary disabled">Source Code: Private Repository</span></p>
