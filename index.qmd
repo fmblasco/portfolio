@@ -1,11 +1,12 @@
 ---
 title: "Francisco Blasco"
+toc: false
 about:
   template: trestles
   links:
     - icon: envelope
       text: Email
-      href: mailto:seu_email@exemplo.com
+      href: mailto:fblasco.eco@gmail.com
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/francisco-blasco-08ab6a332/

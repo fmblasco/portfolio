@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-01">
+<meta name="description" content="Deciphering the mechanisms of federal public budget articulation through econometric modeling and Network Analysis.">
 
-<title>budget-gatekeepers – Francisco Blasco</title>
+<title>Budget Gatekeepers: Federal Transfer Network in Brazil – Francisco Blasco</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -113,17 +115,77 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#connecting-public-finance-to-political-strategy" id="toc-connecting-public-finance-to-political-strategy" class="nav-link active" data-scroll-target="#connecting-public-finance-to-political-strategy">Connecting Public Finance to Political Strategy</a></li>
+  <li><a href="#data-science-and-etl-panel-data" id="toc-data-science-and-etl-panel-data" class="nav-link" data-scroll-target="#data-science-and-etl-panel-data">1. Data Science and ETL (Panel Data)</a></li>
+  <li><a href="#relational-intelligence" id="toc-relational-intelligence" class="nav-link" data-scroll-target="#relational-intelligence">2. Relational Intelligence</a></li>
+  <li><a href="#econometric-modeling" id="toc-econometric-modeling" class="nav-link" data-scroll-target="#econometric-modeling">3. Econometric Modeling</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Budget Gatekeepers: Federal Transfer Network in Brazil</h1>
+</div>
+
+<div>
+  <div class="description">
+    Deciphering the mechanisms of federal public budget articulation through econometric modeling and Network Analysis.
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 1, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
 
 
+<section id="connecting-public-finance-to-political-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="connecting-public-finance-to-political-strategy">Connecting Public Finance to Political Strategy</h3>
+<p>As my focus shifts increasingly toward economics and public finance, I constantly seek out complex challenges that force me to expand my quantitative toolkit. This project has been instrumental in that journey, driving me to deepen my knowledge in econometrics to investigate party bargaining power in the distribution of federal resources (Voluntary Transfers of the Union) to Brazilian municipalities.</p>
+<p>This research goes beyond mapping; it is a rigorous political-economic analysis of how institutional “gatekeepers” control access to public funds.</p>
+<hr>
+</section>
+<section id="data-science-and-etl-panel-data" class="level3">
+<h3 class="anchored" data-anchor-id="data-science-and-etl-panel-data">1. Data Science and ETL (Panel Data)</h3>
+<p>Building a robust economic analysis requires pristine data infrastructure. I structured longitudinal panel data spanning from 2011 to 2016, containing thousands of observations.</p>
+<p>This complex ETL pipeline integrates: * Budgetary microdata from TransfereGov/Siconv. * Territorial matching between IBGE and TSE datasets via crosswalks. * Automated consumption of the Chamber of Deputies API to capture the true, fluctuating size of parliamentary caucuses.</p>
+<p><em>Learning Note: Designing this architecture taught me how to handle high-dimensional relational data and merge disparate governmental sources without losing observational integrity.</em></p>
+</section>
+<section id="relational-intelligence" class="level3">
+<h3 class="anchored" data-anchor-id="relational-intelligence">2. Relational Intelligence</h3>
+<p>I constructed and projected bipartite networks to map the exact flow of public money between municipalities and intermediaries (Ministries and Parliamentarians). By applying <strong>Betweenness Centrality</strong> calculations, the model successfully identifies the institutional gatekeepers controlling access to the public treasury.</p>
+</section>
+<section id="econometric-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="econometric-modeling">3. Econometric Modeling</h3>
+<p>To measure the “coalition bonus”—the interactive effect between ministerial control and legislative strength—I estimated multiple regression models (Ordinary Least Squares). This approach allowed me to mathematically quantify the impact of the budgetary decentralization generated by the institutional shock of the Impositive Amendments (EC 86/2015).</p>
+<br>
+<div class="text-center">
+<p><span class="btn btn-secondary disabled">Source Code: Private Repository</span></p>
+</div>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -199,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/fmblasco\.github\.io\/portfolio\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
