@@ -1,7 +1,24 @@
 ---
-title: "Home"
+title: "Francisco Blasco"
+about:
+  template: trestles
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:seu_email@exemplo.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/francisco-blasco-08ab6a332/
+    - icon: github
+      text: GitHub
+      href: https://github.com/fmblasco
+    - icon: file-earmark-text
+      text: Lattes
+      href: http://lattes.cnpq.br/1527571014537268
 ---
 
-Welcome to my portfolio. I am an undergraduate student in International Economic Relations at UFMG and a researcher at the Center for Legislative Studies (CEL-DCP/UFMG).
+### About me
+
+Welcome to my portfolio. I am an undergraduate student in International Economic Relations at the Federal University of Minas Gerais (UFMG) and researcher with the Executives, Presidents, and Cabinets Politics (PEX-Network) group, affiliated with the Center for Legislative Studies (CEL-DCP/UFMG).
 
 My work is centered on political-economic analysis and the evaluation of public policies. I build structured datasets and apply quantitative methods to analyze Executive-Legislative dynamics and their impacts on economic development and institutional frameworks.

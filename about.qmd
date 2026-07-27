@@ -1,7 +1,0 @@
----
-title: "About Me"
----
-
-Page under construction! Here, I will detail my research projects and data pipelines applied to economics, political analysis, and public finance.
-
-My technical background involves developing automated web scraping bots in R and Python to extract large-scale legislative and economic documents. I specialize in processing, cleaning, and structuring complex datasets to support evidence-based public policy analysis.

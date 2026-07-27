@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About Me – Francisco Blasco</title>
+<title>Projects &amp; Applied Research – Francisco Blasco</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -99,8 +99,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+<span class="menu-text">Projects</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About Me</h1>
+<h1 class="title">Projects &amp; Applied Research</h1>
 </div>
 
 
@@ -138,8 +138,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Page under construction! Here, I will detail my research projects and data pipelines applied to economics, political analysis, and public finance.</p>
-<p>My technical background involves developing automated web scraping bots in R and Python to extract large-scale legislative and economic documents. I specialize in processing, cleaning, and structuring complex datasets to support evidence-based public policy analysis.</p>
+<p>Here I detail my research projects and data pipelines applied to political economy and public finance.</p>
+<p><br></p>
+<div class="grid">
+<div class="g-col-12 g-col-lg-4">
+<div class="card h-100 shadow-sm">
+<div class="card-body d-flex flex-column">
+<pre><code>&lt;h5 class="card-title"&gt;Budget Gatekeepers &amp; Federal Transfers&lt;/h5&gt;
+&lt;p class="card-text"&gt;Deciphering the mechanisms of federal public budget articulation through econometric modeling and Network Analysis. Investigates party bargaining power and "coalition bonuses" in resource distribution to Brazilian municipalities by mapping bipartisan financial flows and calculating Betweenness Centrality.&lt;/p&gt;
+&lt;div class="mt-auto"&gt;
+  &lt;span class="badge bg-secondary"&gt;R&lt;/span&gt;
+  &lt;span class="badge bg-secondary"&gt;Econometrics&lt;/span&gt;
+  &lt;span class="badge bg-secondary text-warning"&gt;PRIVATE&lt;/span&gt;
+  &lt;div class="text-end mt-3"&gt;&lt;a href="budget-gatekeepers.qmd" class="btn btn-outline-dark btn-sm stretched-link"&gt;Read Case Study&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="g-col-12 g-col-lg-4">
+<div class="card h-100 shadow-sm">
+<div class="card-body d-flex flex-column">
+<pre><code>&lt;h5 class="card-title"&gt;Administrative Unilateralism in Latin America&lt;/h5&gt;
+&lt;p class="card-text"&gt;Large-scale computational research investigating institutional dynamics across Brazil, Argentina, Chile, Peru, Colombia, and Paraguay. Involves developing automated web scraping bots to extract over 150,000 normative acts and applying NLP (Named Entity Recognition) to decode raw official decrees.&lt;/p&gt;
+&lt;div class="mt-auto"&gt;
+  &lt;span class="badge bg-secondary"&gt;Python&lt;/span&gt;
+  &lt;span class="badge bg-secondary"&gt;NLP&lt;/span&gt;
+  &lt;span class="badge bg-secondary text-warning"&gt;PRIVATE&lt;/span&gt;
+  &lt;div class="text-end mt-3"&gt;&lt;a href="administrative-unilateralism.qmd" class="btn btn-outline-dark btn-sm stretched-link"&gt;Read Case Study&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="g-col-12 g-col-lg-4">
+<div class="card h-100 shadow-sm">
+<div class="card-body d-flex flex-column">
+<pre><code>&lt;h5 class="card-title"&gt;Stakeholder Mapping: Fiscal Framework&lt;/h5&gt;
+&lt;p class="card-text"&gt;Quantitative assessment of political risk and transaction costs in the National Congress. Modeled roll-call votes for the Fiscal Framework (PLP 93/2023) using the Jaccard Similarity Index and Louvain clustering to detect invisible behavioral caucuses and strategic gatekeepers.&lt;/p&gt;
+&lt;div class="mt-auto"&gt;
+  &lt;span class="badge bg-secondary"&gt;R &amp; Gephi&lt;/span&gt;
+  &lt;span class="badge bg-secondary"&gt;SNA&lt;/span&gt;
+  &lt;span class="badge bg-secondary"&gt;Clustering&lt;/span&gt;
+  &lt;div class="text-end mt-3"&gt;&lt;a href="fiscal-framework.qmd" class="btn btn-outline-dark btn-sm stretched-link"&gt;Read Case Study&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
 
 
 
@@ -217,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/fmblasco\.github\.io\/portfolio\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

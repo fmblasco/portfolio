@@ -2,15 +2,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "portfolio-franciscoblasco",
+    "title": "Francisco Blasco",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "About me\nWelcome to my portfolio. I am an undergraduate student in International Economic Relations at the Federal University of Minas Gerais (UFMG) and researcher with the Executives, Presidents, and Cabinets Politics (PEX-Network) group, affiliated with the Center for Legislative Studies (CEL-DCP/UFMG).\nMy work is centered on political-economic analysis and the evaluation of public policies. I build structured datasets and apply quantitative methods to analyze Executive-Legislative dynamics and their impacts on economic development and institutional frameworks."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "About this site"
+    "text": "Page under construction! Here, I will detail my research projects and data pipelines applied to economics, political analysis, and public finance.\nMy technical background involves developing automated web scraping bots in R and Python to extract large-scale legislative and economic documents. I specialize in processing, cleaning, and structuring complex datasets to support evidence-based public policy analysis."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects & Applied Research",
+    "section": "",
+    "text": "Here I detail my research projects and data pipelines applied to political economy and public finance.\n\n\n\n\n\n&lt;h5 class=\"card-title\"&gt;Budget Gatekeepers & Federal Transfers&lt;/h5&gt;\n&lt;p class=\"card-text\"&gt;Deciphering the mechanisms of federal public budget articulation through econometric modeling and Network Analysis. Investigates party bargaining power and \"coalition bonuses\" in resource distribution to Brazilian municipalities by mapping bipartisan financial flows and calculating Betweenness Centrality.&lt;/p&gt;\n&lt;div class=\"mt-auto\"&gt;\n  &lt;span class=\"badge bg-secondary\"&gt;R&lt;/span&gt;\n  &lt;span class=\"badge bg-secondary\"&gt;Econometrics&lt;/span&gt;\n  &lt;span class=\"badge bg-secondary text-warning\"&gt;PRIVATE&lt;/span&gt;\n  &lt;div class=\"text-end mt-3\"&gt;&lt;a href=\"budget-gatekeepers.qmd\" class=\"btn btn-outline-dark btn-sm stretched-link\"&gt;Read Case Study&lt;/a&gt;&lt;/div&gt;\n&lt;/div&gt;\n\n\n\n\n\n\n&lt;h5 class=\"card-title\"&gt;Administrative Unilateralism in Latin America&lt;/h5&gt;\n&lt;p class=\"card-text\"&gt;Large-scale computational research investigating institutional dynamics across Brazil, Argentina, Chile, Peru, Colombia, and Paraguay. Involves developing automated web scraping bots to extract over 150,000 normative acts and applying NLP (Named Entity Recognition) to decode raw official decrees.&lt;/p&gt;\n&lt;div class=\"mt-auto\"&gt;\n  &lt;span class=\"badge bg-secondary\"&gt;Python&lt;/span&gt;\n  &lt;span class=\"badge bg-secondary\"&gt;NLP&lt;/span&gt;\n  &lt;span class=\"badge bg-secondary text-warning\"&gt;PRIVATE&lt;/span&gt;\n  &lt;div class=\"text-end mt-3\"&gt;&lt;a href=\"administrative-unilateralism.qmd\" class=\"btn btn-outline-dark btn-sm stretched-link\"&gt;Read Case Study&lt;/a&gt;&lt;/div&gt;\n&lt;/div&gt;\n\n\n\n\n\n\n&lt;h5 class=\"card-title\"&gt;Stakeholder Mapping: Fiscal Framework&lt;/h5&gt;\n&lt;p class=\"card-text\"&gt;Quantitative assessment of political risk and transaction costs in the National Congress. Modeled roll-call votes for the Fiscal Framework (PLP 93/2023) using the Jaccard Similarity Index and Louvain clustering to detect invisible behavioral caucuses and strategic gatekeepers.&lt;/p&gt;\n&lt;div class=\"mt-auto\"&gt;\n  &lt;span class=\"badge bg-secondary\"&gt;R & Gephi&lt;/span&gt;\n  &lt;span class=\"badge bg-secondary\"&gt;SNA&lt;/span&gt;\n  &lt;span class=\"badge bg-secondary\"&gt;Clustering&lt;/span&gt;\n  &lt;div class=\"text-end mt-3\"&gt;&lt;a href=\"fiscal-framework.qmd\" class=\"btn btn-outline-dark btn-sm stretched-link\"&gt;Read Case Study&lt;/a&gt;&lt;/div&gt;\n&lt;/div&gt;"
   }
 ]

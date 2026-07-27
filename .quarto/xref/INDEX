@@ -4,5 +4,11 @@
   },
   "index.qmd": {
     "index.html": "b8ad1a11"
+  },
+  "projects.qmd": {
+    "projects.html": "f6ba283f"
+  },
+  "budget-gatekeepers.qmd": {
+    "budget-gatekeepers.html": "1fb0d968"
   }
 }

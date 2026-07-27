@@ -1,0 +1,41 @@
+---
+title: "Administrative Unilateralism in Latin America"
+description: "Large-scale computational research investigating institutional dynamics across Latin American governments."
+date: "2025-09-01"
+format:
+  html:
+    toc: true
+    theme: cosmo
+---
+
+### Scaling Up Institutional Analysis
+
+Understanding comparative political requires analyzing institutional rules at scale. Guided by the methodological frameworks established in current academic literature on unilateralism, this project has been a steep but highly rewarding learning curve in processing "text-as-data".
+
+My role focuses on the backend infrastructure and data intelligence, managing the complexities of standardizing legal structures across Brazil, Argentina, Chile, Peru, Colombia, and Paraguay.
+
+---
+
+### 1. Web Scraping at Scale (150,000+ Records)
+
+Extracting data from dynamic and often unstable governmental portals requires resilient code. I conceptualized and automated script routines for systematic batch processing. 
+
+This involved overcoming pagination barriers, managing server request rates, and bypassing connection instabilities to successfully consolidate a unified database of over 150,000 official normative records.
+
+### 2. Statistical Programming and Strict Data Validation
+
+Cleaning and modeling large institutional databases requires extreme precision. When validating the data for Argentine legislative relations, for example, I learned the critical importance of strict data alignment. I designed the logic to ensure that legislative texts were only counted in our metrics if they were definitively present in the local text database. Handling these discrepancies natively within the code ensures the integrity of the cross-country analysis.
+
+### 3. Natural Language Processing (NLP)
+
+To move beyond metadata, I applied NLP techniques to decode the raw content of decrees and official acts—a crucial step for identifying regulatory selectivity. 
+
+*   **Pre-processing & Vectorization:** Transforming legal jargon into structured data.
+*   **Named Entity Recognition (NER):** Automatically identifying and categorizing key political and economic actors within the texts.
+
+*Learning Note: This project marked a significant step in my technical evolution, bridging the gap between traditional web scraping and advanced computational text analysis for regulatory policy assessment.*
+
+<br>
+<div class="text-center">
+  <span class="btn btn-secondary disabled">Source Code: Private Repository</span>
+</div>
