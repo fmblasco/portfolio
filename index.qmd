@@ -1,7 +1,7 @@
 ---
-title: "portfolio-franciscoblasco"
+title: "Home"
 ---
 
-This is a Quarto website.
+Welcome to my portfolio. I am an undergraduate student in International Economic Relations at UFMG and a researcher at the Center for Legislative Studies (CEL-DCP/UFMG).
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+My work is centered on political-economic analysis and the evaluation of public policies. I build structured datasets and apply quantitative methods to analyze Executive-Legislative dynamics and their impacts on economic development and institutional frameworks.
