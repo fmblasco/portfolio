@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-07-26">
+<meta name="dcterms.date" content="2026-07-22">
 <meta name="description" content="Measuring political risk and transaction costs in the National Congress using Network Analysis.">
 
 <title>Stakeholder Mapping: Voting Patterns for the Fiscal Framework – Francisco Blasco</title>
@@ -177,7 +177,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 26, 2026</p>
+      <p class="date">July 22, 2026</p>
     </div>
   </div>
   
@@ -192,7 +192,7 @@ window.Quarto = {
 <section id="the-intersection-of-data-and-economics" class="level3">
 <h3 class="anchored" data-anchor-id="the-intersection-of-data-and-economics">The Intersection of Data and Economics</h3>
 <p>As an aspiring economist, I understand that macroeconomic models and fiscal policies do not exist in a vacuum. The approval of a major economic anchor, such as the new Fiscal Framework (PLP 93/2023), relies heavily on institutional predictability and informal alliances.</p>
-<p>This project is a core part of my continuous learning journey in quantitative research. It represents my dedication to pushing my technical boundaries, bridging the gap between raw data engineering and advanced political-economic analysis.</p>
+<p>This project is a core part of my continuous learning journey in quantitative research. It represents my dedication to pushing my technical boundaries, bridging the gap between raw data science and advanced political-economic analysis.</p>
 <hr>
 </section>
 <section id="data-manipulation-and-algebraic-modeling" class="level3">
@@ -201,7 +201,7 @@ window.Quarto = {
 <p>Mathematically, this models the exact proportion of agreement between any two parliamentarians based on their shared votes:</p>
 <p><span class="math display">\[J(A,B) = \frac{|A \cap B|}{|A \cup B|}\]</span></p>
 <blockquote class="blockquote">
-<p><strong>Technical Note on Data Engineering:</strong> Building this pipeline required rigorous data hygiene. When processing the extracted legislative datasets locally, I optimized the ingestion by strictly parsing standard comma delimiters using <code>read_csv()</code> in R. This fine-tuning ensured the structural integrity of the relational matrices before applying any algebraic transformations.</p>
+<p><strong>Technical Note on Data Cleaning &amp; Institutional Rules:</strong> A critical step in building the relational matrices was the rigorous treatment of missing data (NAs). Plenary absences and institutional abstentions—specifically those under Article 17 of the Chamber’s Internal Regulations—were carefully isolated. Failing to separate these procedural nuances from actual “no” votes would mathematically distort the Jaccard Index, creating false proximity between parliamentarians who were simply absent and those actively opposing the agenda.</p>
 </blockquote>
 </section>
 <section id="unsupervised-clustering-louvain-algorithm" class="level3">
@@ -213,7 +213,9 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="network-metrics-and-stakeholder-identification">3. Network Metrics and Stakeholder Identification</h3>
 <p>Using Gephi (ForceAtlas 2) for topological mapping, I extracted the <strong>Betweenness Centrality</strong> metric for the network.</p>
 <p>This calculation successfully identified the parliamentarians acting as strategic articulators—the literal bridges between rival blocs. For public policy forecasting, identifying these decision-makers is vital. Because they control the flow of negotiations and information, they hold the power to unlock or stall the formation of a majority for the country’s economic agenda.</p>
-<br>
+<p><br></p>
+<p><em>(Visual representation of the legislative network and ideological clusters based on roll-call votes)</em> <img src="co-voting_graph.png" class="img-fluid quarto-figure quarto-figure-center" style="width:100.0%"></p>
+<p><br></p>
 <div class="text-center">
 <p><a href="https://github.com/fmblasco/legislative_network_analysis" target="_blank" class="btn btn-dark">View Source Code on GitHub</a></p>
 </div>
@@ -295,7 +297,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/fmblasco\.github\.io\/portfolio\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

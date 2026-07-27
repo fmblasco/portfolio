@@ -1,7 +1,7 @@
 ---
 title: "Administrative Unilateralism in Latin America"
+subtitle: "Status: Ongoing Research (Since Sep 2025)"
 description: "Large-scale computational research investigating institutional dynamics across Latin American governments."
-date: "2025-09-01"
 format:
   html:
     toc: true
@@ -10,7 +10,9 @@ format:
 
 ### Scaling Up Institutional Analysis
 
-Understanding comparative political requires analyzing institutional rules at scale. Guided by the methodological frameworks established in current academic literature on unilateralism, this project has been a steep but highly rewarding learning curve in processing "text-as-data".
+This is a large-scale computational research investigating institutional dynamics across Latin American governments. I participate in this study as a researcher for the [PEX - Network](https://pex-network.com/) group, contributing to the project titled *"Unilateralismo Administrativo: seletividade regulatória e particularismo presidencial"*.
+
+Understanding comparative political economy requires analyzing institutional rules at scale. Guided by the methodological frameworks established in current academic literature on unilateralism, this project has been a steep but highly rewarding learning curve in processing "text-as-data".
 
 My role focuses on the backend infrastructure and data intelligence, managing the complexities of standardizing legal structures across Brazil, Argentina, Chile, Peru, Colombia, and Paraguay.
 
@@ -20,7 +22,7 @@ My role focuses on the backend infrastructure and data intelligence, managing th
 
 Extracting data from dynamic and often unstable governmental portals requires resilient code. I conceptualized and automated script routines for systematic batch processing. 
 
-This involved overcoming pagination barriers, managing server request rates, and bypassing connection instabilities to successfully consolidate a unified database of over 150,000 official normative records.
+This involved overcoming pagination barriers, managing server request rates, and bypassing connection instabilities to successfully consolidate, for example, a unified database of over 150,000 official normative records.
 
 ### 2. Statistical Programming and Strict Data Validation
 
@@ -33,7 +35,7 @@ To move beyond metadata, I applied NLP techniques to decode the raw content of d
 *   **Pre-processing & Vectorization:** Transforming legal jargon into structured data.
 *   **Named Entity Recognition (NER):** Automatically identifying and categorizing key political and economic actors within the texts.
 
-*Learning Note: This project marked a significant step in my technical evolution, bridging the gap between traditional web scraping and advanced computational text analysis for regulatory policy assessment.*
+*Learning Note: This project marked a significant step in my technical evolution, bridging the gap between traditional web scraping and advanced computational text analysis for economic policy evaluation.*
 
 <br>
 <div class="text-center">

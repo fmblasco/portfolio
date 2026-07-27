@@ -1,7 +1,7 @@
 ---
 title: "Budget Gatekeepers: Federal Transfer Network in Brazil"
+subtitle: "Status: Ongoing Research (Since Nov 2025)"
 description: "Deciphering the mechanisms of federal public budget articulation through econometric modeling and Network Analysis."
-date: "2025-11-01"
 format:
   html:
     toc: true
@@ -10,7 +10,9 @@ format:
 
 ### Connecting Public Finance to Political Strategy
 
-As my focus shifts increasingly toward economics and public finance, I constantly seek out complex challenges that force me to expand my quantitative toolkit. This project has been instrumental in that journey, driving me to deepen my knowledge in econometrics to investigate party bargaining power in the distribution of federal resources (Voluntary Transfers of the Union) to Brazilian municipalities.
+*An Undergraduate Research Project (Iniciação Científica) deciphering the mechanisms of federal public budget articulation through econometric modeling and Network Analysis.*
+
+As I delve deeper into the study of public finance, I constantly seek out complex challenges that force me to expand my quantitative toolkit. This project has been instrumental in that journey, driving me to deepen my knowledge in econometrics to investigate party bargaining power in the distribution of federal resources (Voluntary Transfers of the Union) to Brazilian municipalities.
 
 This research goes beyond mapping; it is a rigorous political-economic analysis of how institutional "gatekeepers" control access to public funds.
 

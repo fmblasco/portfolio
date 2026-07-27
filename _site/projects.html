@@ -169,7 +169,7 @@ Administrative Unilateralism in Latin America
 Large-scale computational research investigating institutional dynamics across Brazil, Argentina, Chile, Peru, Colombia, and Paraguay. Involves developing automated web scraping bots to extract over 150,000 normative acts and applying NLP (Named Entity Recognition) to decode raw official decrees.
 </p>
 <div class="mt-auto">
-<span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">NLP</span> <span class="badge bg-secondary text-warning">PRIVATE</span>
+<span class="badge bg-secondary">R</span> <span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">NLP</span> <span class="badge bg-secondary text-warning">PRIVATE</span>
 <div class="text-end mt-3">
 <a href="./administrative-unilateralism.html" class="btn btn-outline-dark btn-sm stretched-link">Read Case Study</a>
 </div>
@@ -273,7 +273,7 @@ Quantitative assessment of political risk and transaction costs in the National 
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/fmblasco\.github\.io\/portfolio\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

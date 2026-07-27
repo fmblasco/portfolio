@@ -1,7 +1,7 @@
 ---
 title: "Stakeholder Mapping: Voting Patterns for the Fiscal Framework"
 description: "Measuring political risk and transaction costs in the National Congress using Network Analysis."
-date: "2026-07-26"
+date: "2026-07-22"
 format:
   html:
     toc: true
@@ -12,7 +12,7 @@ format:
 
 As an aspiring economist, I understand that macroeconomic models and fiscal policies do not exist in a vacuum. The approval of a major economic anchor, such as the new Fiscal Framework (PLP 93/2023), relies heavily on institutional predictability and informal alliances. 
 
-This project is a core part of my continuous learning journey in quantitative research. It represents my dedication to pushing my technical boundaries, bridging the gap between raw data engineering and advanced political-economic analysis.
+This project is a core part of my continuous learning journey in quantitative research. It represents my dedication to pushing my technical boundaries, bridging the gap between raw data science and advanced political-economic analysis.
 
 ---
 
@@ -24,7 +24,7 @@ Mathematically, this models the exact proportion of agreement between any two pa
 
 $$J(A,B) = \frac{|A \cap B|}{|A \cup B|}$$
 
-> **Technical Note on Data Engineering:** Building this pipeline required rigorous data hygiene. When processing the extracted legislative datasets locally, I optimized the ingestion by strictly parsing standard comma delimiters using `read_csv()` in R. This fine-tuning ensured the structural integrity of the relational matrices before applying any algebraic transformations.
+> **Technical Note on Data Cleaning & Institutional Rules:** A critical step in building the relational matrices was the rigorous treatment of missing data (NAs). Plenary absences and institutional abstentions—specifically those under Article 17 of the Chamber's Internal Regulations—were carefully isolated. Failing to separate these procedural nuances from actual "no" votes would mathematically distort the Jaccard Index, creating false proximity between parliamentarians who were simply absent and those actively opposing the agenda.
 
 ### 2. Unsupervised Clustering (Louvain Algorithm)
 
@@ -39,6 +39,12 @@ Using Gephi (ForceAtlas 2) for topological mapping, I extracted the **Betweennes
 This calculation successfully identified the parliamentarians acting as strategic articulators—the literal bridges between rival blocs. For public policy forecasting, identifying these decision-makers is vital. Because they control the flow of negotiations and information, they hold the power to unlock or stall the formation of a majority for the country's economic agenda.
 
 <br>
+
+*(Visualization of the legislative network and ideological groupings based on roll-call votes.)*
+![](co-voting_graph.png){fig-align="center" width="100%"}
+
+<br>
+
 <div class="text-center">
   <a href="https://github.com/fmblasco/legislative_network_analysis" target="_blank" class="btn btn-dark">View Source Code on GitHub</a>
 </div>
