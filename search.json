@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome to my portfolio. I am an undergraduate student in International Economic Relations at UFMG and a researcher at the Center for Legislative Studies (CEL-DCP/UFMG).\nMy work is centered on political-economic analysis and the evaluation of public policies. I build structured datasets and apply quantitative methods to analyze Executive-Legislative dynamics and their impacts on economic development and institutional frameworks."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Page under construction! Here, I will detail my research projects and data pipelines applied to economics, political analysis, and public finance.\nMy technical background involves developing automated web scraping bots in R and Python to extract large-scale legislative and economic documents. I specialize in processing, cleaning, and structuring complex datasets to support evidence-based public policy analysis."
+  }
+]
