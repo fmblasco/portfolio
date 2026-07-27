@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-07-26">
+<meta name="description" content="Measuring political risk and transaction costs in the National Congress using Network Analysis.">
 
-<title>Francisco Blasco</title>
+<title>Stakeholder Mapping: Voting Patterns for the Fiscal Framework – Francisco Blasco</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -40,6 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -73,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -94,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -115,54 +147,90 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About me</a></li>
+  <li><a href="#the-intersection-of-data-and-economics" id="toc-the-intersection-of-data-and-economics" class="nav-link active" data-scroll-target="#the-intersection-of-data-and-economics">The Intersection of Data and Economics</a></li>
+  <li><a href="#data-manipulation-and-algebraic-modeling" id="toc-data-manipulation-and-algebraic-modeling" class="nav-link" data-scroll-target="#data-manipulation-and-algebraic-modeling">1. Data Manipulation and Algebraic Modeling</a></li>
+  <li><a href="#unsupervised-clustering-louvain-algorithm" id="toc-unsupervised-clustering-louvain-algorithm" class="nav-link" data-scroll-target="#unsupervised-clustering-louvain-algorithm">2. Unsupervised Clustering (Louvain Algorithm)</a></li>
+  <li><a href="#network-metrics-and-stakeholder-identification" id="toc-network-metrics-and-stakeholder-identification" class="nav-link" data-scroll-target="#network-metrics-and-stakeholder-identification">3. Network Metrics and Stakeholder Identification</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Francisco Blasco</h1>
+<h1 class="title">Stakeholder Mapping: Voting Patterns for the Fiscal Framework</h1>
 </div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="mailto:seu_email@exemplo.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="https://www.linkedin.com/in/francisco-blasco-08ab6a332/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/fmblasco" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="http://lattes.cnpq.br/1527571014537268" class="about-link" rel="" target="">
-    <i class="bi bi-file-earmark-text"></i>
-     <span class="about-link-text">Lattes</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
 
-<section id="about-me" class="level3">
-<h3 data-anchor-id="about-me">About me</h3>
-<p>Welcome to my portfolio. I am an undergraduate student in International Economic Relations at the Federal University of Minas Gerais (UFMG) and researcher with the Executives, Presidents, and Cabinets Politics (PEX-Network) group, affiliated with the Center for Legislative Studies (CEL-DCP/UFMG).</p>
-<p>My work is centered on political-economic analysis and the evaluation of public policies. I build structured datasets and apply quantitative methods to analyze Executive-Legislative dynamics and their impacts on economic development and institutional frameworks.</p>
+<div>
+  <div class="description">
+    Measuring political risk and transaction costs in the National Congress using Network Analysis.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 26, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-intersection-of-data-and-economics" class="level3">
+<h3 class="anchored" data-anchor-id="the-intersection-of-data-and-economics">The Intersection of Data and Economics</h3>
+<p>As an aspiring economist, I understand that macroeconomic models and fiscal policies do not exist in a vacuum. The approval of a major economic anchor, such as the new Fiscal Framework (PLP 93/2023), relies heavily on institutional predictability and informal alliances.</p>
+<p>This project is a core part of my continuous learning journey in quantitative research. It represents my dedication to pushing my technical boundaries, bridging the gap between raw data engineering and advanced political-economic analysis.</p>
+<hr>
+</section>
+<section id="data-manipulation-and-algebraic-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="data-manipulation-and-algebraic-modeling">1. Data Manipulation and Algebraic Modeling</h3>
+<p>To map tactical alliances accurately, we must filter out procedural noise and plenary absences. I quickly learned that relying on simple vote counting often misrepresents true party behavior and strategy. To solve this, I constructed relational matrices utilizing the <strong>Jaccard Similarity Index</strong>.</p>
+<p>Mathematically, this models the exact proportion of agreement between any two parliamentarians based on their shared votes:</p>
+<p><span class="math display">\[J(A,B) = \frac{|A \cap B|}{|A \cup B|}\]</span></p>
+<blockquote class="blockquote">
+<p><strong>Technical Note on Data Engineering:</strong> Building this pipeline required rigorous data hygiene. When processing the extracted legislative datasets locally, I optimized the ingestion by strictly parsing standard comma delimiters using <code>read_csv()</code> in R. This fine-tuning ensured the structural integrity of the relational matrices before applying any algebraic transformations.</p>
+</blockquote>
+</section>
+<section id="unsupervised-clustering-louvain-algorithm" class="level3">
+<h3 class="anchored" data-anchor-id="unsupervised-clustering-louvain-algorithm">2. Unsupervised Clustering (Louvain Algorithm)</h3>
+<p>By applying the Louvain algorithm for community detection, the model revealed the invisible behavioral caucuses within the Congress.</p>
+<p>The results provided crucial insights for economic risk assessment: the algorithm indicated a pragmatic fragmentation of the “Centrão” into two distinct negotiation masses, directly reflecting the transaction costs and the slicing of parliamentary amendments. Furthermore, it mathematically captured the opposition, highlighting the tactical union of ideological extremes (PL and PSOL) in resistance to the fiscal agenda.</p>
+</section>
+<section id="network-metrics-and-stakeholder-identification" class="level3">
+<h3 class="anchored" data-anchor-id="network-metrics-and-stakeholder-identification">3. Network Metrics and Stakeholder Identification</h3>
+<p>Using Gephi (ForceAtlas 2) for topological mapping, I extracted the <strong>Betweenness Centrality</strong> metric for the network.</p>
+<p>This calculation successfully identified the parliamentarians acting as strategic articulators—the literal bridges between rival blocs. For public policy forecasting, identifying these decision-makers is vital. Because they control the flow of negotiations and information, they hold the power to unlock or stall the formation of a majority for the country’s economic agenda.</p>
+<br>
+<div class="text-center">
+<p><a href="https://github.com/fmblasco/legislative_network_analysis" target="_blank" class="btn btn-dark">View Source Code on GitHub</a></p>
+</div>
 
 
 </section>
-</main></div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

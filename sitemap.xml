@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fmblasco.github.io/portfolio/index.html</loc>
-    <lastmod>2026-07-27T01:17:19.487Z</lastmod>
+    <loc>https://fmblasco.github.io/portfolio/projects.html</loc>
+    <lastmod>2026-07-27T02:24:26.478Z</lastmod>
   </url>
   <url>
-    <loc>https://fmblasco.github.io/portfolio/about.html</loc>
-    <lastmod>2026-07-27T01:18:42.333Z</lastmod>
+    <loc>https://fmblasco.github.io/portfolio/fiscal-framework.html</loc>
+    <lastmod>2026-07-27T02:29:58.668Z</lastmod>
+  </url>
+  <url>
+    <loc>https://fmblasco.github.io/portfolio/administrative-unilateralism.html</loc>
+    <lastmod>2026-07-27T02:28:09.014Z</lastmod>
+  </url>
+  <url>
+    <loc>https://fmblasco.github.io/portfolio/budget-gatekeepers.html</loc>
+    <lastmod>2026-07-27T02:24:34.550Z</lastmod>
+  </url>
+  <url>
+    <loc>https://fmblasco.github.io/portfolio/index.html</loc>
+    <lastmod>2026-07-27T02:20:10.889Z</lastmod>
   </url>
 </urlset>
