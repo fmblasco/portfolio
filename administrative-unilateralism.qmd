@@ -42,7 +42,7 @@ To move beyond metadata, I applied NLP techniques to decode the raw content of d
 ---
 
 ### Technologies & Tools
-*   **Languages & Packages:** R (dplyr, rvest, rmarkdown, stringi, etc.); Python (Pandas, PyMuPDF/fitz, Glob, OS).
+*   **Languages & Packages:** R (dplyr, rvest, httr, jsonlite, stringi, rmarkdown, etc.); Python (Pandas, PyMuPDF/fitz, Glob, OS).
 *   **Data Sources:** Various Governmental and Legal APIs.
 
 <br>

@@ -1,7 +1,7 @@
 ---
 title: "Budget Gatekeepers: Federal Transfer Network in Brazil"
 subtitle: "Status: Ongoing Research (Since Nov 2025)"
-description: "Deciphering the mechanisms of federal public budget articulation through econometric modeling and Network Analysis."
+description: "An Undergraduate Research Project deciphering the mechanisms of federal public budget articulation through econometric modeling and Network Analysis."
 format:
   html:
     toc: true
@@ -10,13 +10,9 @@ format:
 
 ### Connecting Public Finance to Political Strategy
 
-*An Undergraduate Research Project deciphering the mechanisms of federal public budget articulation through econometric modeling and Network Analysis.*
-
 As I delve deeper into the study of public finance, I constantly seek out complex challenges that force me to expand my quantitative toolkit. This project has been instrumental in that journey, driving me to deepen my knowledge in econometrics to investigate party bargaining power in the distribution of federal resources (Voluntary Transfers of the Union) to Brazilian municipalities.
 
 This research goes beyond mapping; it is a rigorous political-economic analysis of how institutional "gatekeepers" control access to public funds.
-
----
 
 ---
 
@@ -34,7 +30,15 @@ This complex ETL pipeline integrates:
 
 ### 2. Relational Intelligence
 
-I constructed and projected bipartite networks to map the exact flow of public money between municipalities and intermediaries (Ministries and Parliamentarians). By applying **Betweenness Centrality** calculations, the model successfully identifies the institutional gatekeepers controlling access to the public treasury.
+Unlike traditional literature, which focuses heavily on the final destination of allocated resources (the municipalities), my analytical perspective centers on the *intermediaries* of these transfers. To achieve this, I constructed a bipartite network mapping the exact flow of public money and subsequently projected it into a one-mode network containing only the intermediate actors (Ministries and Parliamentarians) via matrix multiplication.
+
+This structural transformation allows for the precise application of **Betweenness Centrality** calculations. 
+
+Why focus on this specific metric? In public finance and political economy, the true power often lies not just with who authorizes the budget, but with who *mediates* it. Graph Theory allows us to map these *brokers*. These are the political actors who mathematically control the pathways of negotiation and information between the federal government and local municipalities. By acting as 'bridges' (network bottlenecks), they become the institutional gatekeepers holding the practical power to unlock, stall, or negotiate access to federal voluntary transfers.
+
+For each year in the panel, the Betweenness Centrality is calculated based on the connection weights to identify these key intermediaries:
+
+$$Betweenness(i) = \sum_{s \neq i \neq t} \frac{\sigma_{st}(i)}{\sigma_{st}}$$
 
 ### 3. Econometric Modeling
 
@@ -43,7 +47,7 @@ To measure the "coalition bonus"—the interactive effect between ministerial co
 ---
 
 ### Technologies & Tools
-*   **Languages & Packages:** R (electionsbr, dplyr, etc.).
+*   **Languages & Packages:** R (electionsbr, dplyr, purr, httr, jsonlite, igraph, etc.).
 *   **Software:** Gephi (ForceAtlas 2).
 *   **Data Sources:** TransfereGov/Siconv; IBGE & TSE Databases (Crosswalk); Chamber of Deputies Open Data API.
 
