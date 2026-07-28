@@ -149,7 +149,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-intersection-of-data-and-economics" id="toc-the-intersection-of-data-and-economics" class="nav-link active" data-scroll-target="#the-intersection-of-data-and-economics">The Intersection of Data and Economics</a></li>
+  <li><a href="#the-intersection-of-data-and-political-economic-analysis" id="toc-the-intersection-of-data-and-political-economic-analysis" class="nav-link active" data-scroll-target="#the-intersection-of-data-and-political-economic-analysis">The Intersection of Data and Political-Economic Analysis</a></li>
   <li><a href="#data-manipulation-and-algebraic-modeling" id="toc-data-manipulation-and-algebraic-modeling" class="nav-link" data-scroll-target="#data-manipulation-and-algebraic-modeling">1. Data Manipulation and Algebraic Modeling</a></li>
   <li><a href="#unsupervised-clustering-louvain-algorithm" id="toc-unsupervised-clustering-louvain-algorithm" class="nav-link" data-scroll-target="#unsupervised-clustering-louvain-algorithm">2. Unsupervised Clustering (Louvain Algorithm)</a></li>
   <li><a href="#network-metrics-and-stakeholder-identification" id="toc-network-metrics-and-stakeholder-identification" class="nav-link" data-scroll-target="#network-metrics-and-stakeholder-identification">3. Network Metrics and Stakeholder Identification</a></li>
@@ -190,16 +190,17 @@ window.Quarto = {
 </header>
 
 
-<section id="the-intersection-of-data-and-economics" class="level3">
-<h3 class="anchored" data-anchor-id="the-intersection-of-data-and-economics">The Intersection of Data and Economics</h3>
+<section id="the-intersection-of-data-and-political-economic-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="the-intersection-of-data-and-political-economic-analysis">The Intersection of Data and Political-Economic Analysis</h3>
 <p>As an aspiring economist, I understand that macroeconomic models and fiscal policies do not exist in a vacuum. The approval of a major economic anchor, such as the new Fiscal Framework (PLP 93/2023), relies heavily on institutional predictability and informal alliances.</p>
 <p>This project is a core part of my continuous learning journey in quantitative research. It represents my dedication to pushing my technical boundaries, bridging the gap between raw data science and advanced political-economic analysis.</p>
 <hr>
 </section>
 <section id="data-manipulation-and-algebraic-modeling" class="level3">
 <h3 class="anchored" data-anchor-id="data-manipulation-and-algebraic-modeling">1. Data Manipulation and Algebraic Modeling</h3>
+<p>The first step in this analysis involves accessing the Chamber of Deputies’ Open Data API to systematically scrape all roll-call votes that led to the approval of the target proposition, forming the raw voting dataset.</p>
 <p>To map tactical alliances accurately, we must filter out procedural noise and plenary absences. I quickly learned that relying on simple vote counting often misrepresents true party behavior and strategy. To solve this, I constructed relational matrices utilizing the <strong>Jaccard Similarity Index</strong>.</p>
-<p>Mathematically, this models the exact proportion of agreement between any two parliamentarians based on their shared votes:</p>
+<p>Mathematically, this models the exact proportion of agreement between any two parliamentarians based on their shared votes. Since the cells of this adjacency matrix are filled with continuous similarity scores, I applied a structural threshold of 0.80 to the network. This ensures that only highly cohesive tactical alliances, where mutual voting agreement exceeds 80%, are mathematically projected onto the final topology:</p>
 <p><span class="math display">\[J(A,B) = \frac{|A \cap B|}{|A \cup B|}\]</span></p>
 <blockquote class="blockquote">
 <p><strong>Technical Note on Data Cleaning &amp; Institutional Rules:</strong> A critical step in building the relational matrices was the rigorous treatment of missing data (NAs). Plenary absences and institutional abstentions—specifically those under Article 17 of the Chamber’s Internal Regulations—were carefully isolated. Failing to separate these procedural nuances from actual “no” votes would mathematically distort the Jaccard Index, creating false proximity between parliamentarians who were simply absent and those actively opposing the agenda.</p>
@@ -208,12 +209,13 @@ window.Quarto = {
 <section id="unsupervised-clustering-louvain-algorithm" class="level3">
 <h3 class="anchored" data-anchor-id="unsupervised-clustering-louvain-algorithm">2. Unsupervised Clustering (Louvain Algorithm)</h3>
 <p>By applying the Louvain algorithm for community detection, the model revealed the invisible behavioral caucuses within the Congress.</p>
-<p>The results provided crucial insights for economic risk assessment: the algorithm indicated a pragmatic fragmentation of the “Centrão” into two distinct negotiation masses, directly reflecting the transaction costs and the slicing of parliamentary amendments. Furthermore, it mathematically captured the opposition, highlighting the tactical union of ideological extremes (PL and PSOL) in resistance to the fiscal agenda.</p>
+<p>The results provided crucial insights for political risk assessment: the algorithm indicated a pragmatic fragmentation of the “Centrão” into two distinct negotiation masses, directly reflecting the transaction costs and the slicing of parliamentary amendments. Furthermore, it mathematically captured the opposition, highlighting the tactical union of ideological extremes (PL and PSOL) in resistance to the fiscal agenda.</p>
 </section>
 <section id="network-metrics-and-stakeholder-identification" class="level3">
 <h3 class="anchored" data-anchor-id="network-metrics-and-stakeholder-identification">3. Network Metrics and Stakeholder Identification</h3>
 <p>Using Gephi (ForceAtlas 2) for topological mapping, I extracted the <strong>Betweenness Centrality</strong> metric for the network.</p>
-<p>This calculation successfully identified the parliamentarians acting as strategic articulators—the literal bridges between rival blocs. For public policy forecasting, identifying these decision-makers is vital. Because they control the flow of negotiations and information, they hold the power to unlock or stall the formation of a majority for the country’s economic agenda.</p>
+<p>This calculation successfully identified the parliamentarians acting as strategic articulators, that is the literal bridges between rival blocs. For public policy forecasting, identifying these decision-makers is vital. Because they control the flow of negotiations and information, they hold the power to unlock or stall the formation of a majority for the country’s economic agenda.</p>
+<p><em>(For detailed data tables, node-level metrics, and further analytical insights, please refer to the source code repository linked below.)</em></p>
 <p><br></p>
 <p><em>(Visualization of the legislative network and ideological groupings based on roll-call votes.)</em> <img src="co-voting_graph.png" class="img-fluid quarto-figure quarto-figure-center" style="width:100.0%"></p>
 <hr>
@@ -221,7 +223,7 @@ window.Quarto = {
 <section id="technologies-tools" class="level3">
 <h3 class="anchored" data-anchor-id="technologies-tools">Technologies &amp; Tools</h3>
 <ul>
-<li><strong>Languages &amp; Packages:</strong> R (dplyr, tidyr, purrr, igraph).</li>
+<li><strong>Languages &amp; Packages:</strong> R (dplyr, tidyr, purrr, httr, jsonlite, igraph, etc.).</li>
 <li><strong>Software:</strong> Gephi (ForceAtlas 2).</li>
 <li><strong>Data Sources:</strong> Chamber of Deputies Open Data API.</li>
 </ul>
