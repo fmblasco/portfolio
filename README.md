@@ -48,7 +48,7 @@ portfolio/
 
 ## Contact
 
-- LinkedIn: https://www.linkedin.com/in/francisco-blasco-08ab6a332/
+- LinkedIn: https://www.linkedin.com/in/francisco-blasco-eco/
 
 ---
 
