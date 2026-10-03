@@ -21,7 +21,7 @@ Site sections:
 ## Features
 
 * Scientific and academic publishing format optimized by Quarto
-* Responsive layout for desktop and mobile (Cosmo theme)
+* Responsive layout for desktop and mobile (Customized Solar theme)
 * Seamless integration with data science workflows
 * Detailed documentation of methodologies (SNA, NLP, Econometrics)
 
